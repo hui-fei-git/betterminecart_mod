@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "betterminecartmod",
+	"version": "${version}",
+	"name": "BetterMinecartMod",
+	"description": "这是描述",
+	"authors": [
+		"hui_fei"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/betterminecartmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"hui_fei.betterminecartmod.BetterMinecartMod"
+		],
+		"fabric-datagen": [
+			"hui_fei.betterminecartmod.BetterMinecartModDataGenerator"
+		],
+		"client": [
+			"hui_fei.betterminecartmod.BetterMinecartModClient"
+		]
+	},
+	"mixins": [
+		"betterminecartmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
